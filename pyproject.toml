@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "geospatial-web-harvester"
+version = "0.1.0"
+description = "Traceable HTML ingestion, geospatial screening and idempotent PostGIS persistence"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "requests>=2.32,<3",
+  "beautifulsoup4>=4.12,<5",
+  "lxml>=5,<7",
+  "sqlalchemy>=2,<3",
+  "psycopg[binary]>=3.2,<4",
+  "geoalchemy2>=0.16,<1",
+  "geopandas>=1,<2",
+  "shapely>=2,<3",
+  "pyproj>=3.6,<4",
+  "pydantic-settings>=2.6,<3",
+]
+
+[project.scripts]
+geospatial-web-harvester = "geospatial_web_harvester.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/geospatial_web_harvester"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires TEST_DATABASE_URL pointing to a disposable PostGIS database"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

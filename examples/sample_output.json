@@ -1,0 +1,526 @@
+{
+  "synthetic": true,
+  "geometry_crs": "EPSG:25832",
+  "quality_report": {
+    "success": true,
+    "synthetic": true,
+    "source_mode": "fixture",
+    "mode": "dry_run",
+    "scan_time": "2026-10-27T12:00:00+00:00",
+    "fetched_cards": 8,
+    "parsed_observations": 8,
+    "unique_keys": 7,
+    "duplicates": 1,
+    "quarantined": 0,
+    "quarantine_details": [],
+    "parse_failures": 0,
+    "network_failures": 0,
+    "database_failures": 0,
+    "database": {
+      "inserted": 0,
+      "updated": 0,
+      "unchanged": 0,
+      "source_updated": 0,
+      "reference_updated": 0
+    },
+    "a4_reference": {
+      "file": "a4_thueringen.geojson",
+      "sha256": "9292b79391a03866d882d063a9c2144b946242c45a91bd4cd06bf5ab66366936",
+      "generator": "overpass-turbo",
+      "snapshot_timestamp": "2026-10-27T18:00:36Z",
+      "license": "OpenStreetMap contributors, ODbL",
+      "line_features": 1245,
+      "skipped_features": 0,
+      "bounds_4326": [
+        9.9345144,
+        50.8405463,
+        12.3562277,
+        51.0173454
+      ],
+      "bounds_25832": [
+        565655.4533258334,
+        5637461.746458875,
+        736283.5680584259,
+        5652633.616437347
+      ],
+      "line_length_m": 382871.69610153686,
+      "buffer_meters": 10000.0,
+      "continuous_chains": 2,
+      "max_longitude_gap_m": 0.0,
+      "connectivity_tolerance_m": 1000
+    },
+    "state_reference": {
+      "file": "thueringen_boundary.geojson",
+      "sha256": "406a9049b6ce9ab439b83d46e076b46bf4ff4442c733f0fb664ddb5ead538904",
+      "generator": "overpass-turbo",
+      "snapshot_timestamp": "2026-10-27T18:09:51Z",
+      "license": "OpenStreetMap contributors, ODbL",
+      "polygon_features": 1,
+      "skipped_features": 2,
+      "bounds_4326": [
+        9.8769608,
+        50.2043467,
+        12.6539368,
+        51.6492842
+      ],
+      "bounds_25832": [
+        562009.0429371081,
+        5562762.865367232,
+        756805.838107083,
+        5723503.533744069
+      ],
+      "area_km2": 16198.1127973051
+    },
+    "warnings": [
+      "synthetic_planning_notices"
+    ],
+    "accepted": 2,
+    "needs_review": 2,
+    "excluded": 3,
+    "no_geometry": 1,
+    "classified_records": 7,
+    "domain": {
+      "approval_status": {
+        "approved": 6,
+        "not_approved": 1
+      },
+      "industrial_status": {
+        "industrial": 6,
+        "non_industrial": 1
+      }
+    },
+    "spatial": {
+      "inside": 5,
+      "outside": 1,
+      "unknown": 1
+    },
+    "state": {
+      "inside": 6,
+      "unknown": 1
+    },
+    "quality_flags": {
+      "duplicate_in_batch": 1,
+      "excluded_non_industrial": 1,
+      "excluded_not_approved": 1,
+      "excluded_outside_a4": 1,
+      "missing_coordinates": 1,
+      "missing_publication_date": 1,
+      "synthetic_fixture": 7
+    },
+    "excluded_records": [
+      {
+        "source_key": "id:SYN-Q003",
+        "reasons": [
+          "not_approved"
+        ]
+      },
+      {
+        "source_key": "id:SYN-Q004",
+        "reasons": [
+          "non_industrial"
+        ]
+      },
+      {
+        "source_key": "id:SYN-Q007",
+        "reasons": [
+          "outside_a4"
+        ]
+      }
+    ]
+  },
+  "records": [
+    {
+      "source_id": "SYN-Q001",
+      "source_url": "https://example.invalid/record/SYN-Q001",
+      "title": "TESTFALL: Genehmigung für fiktives Industriegebiet an der Südachse",
+      "description": "Vollständig synthetischer Testeintrag ohne Realweltbezug.",
+      "municipality": "Gotha",
+      "location_text": "Fiktive Musterstraße 1, Gotha",
+      "procedure_status": "Genehmigung erteilt",
+      "source_system": "thueringen_planning_fixture",
+      "source_key": "id:SYN-Q001",
+      "publication_date": "2026-10-03",
+      "publication_date_raw": "03.10.2026",
+      "approval_status": "approved",
+      "industrial_status": "industrial",
+      "signal_type": "approval_notice",
+      "geom": {
+        "srid": 25832,
+        "type": "Point",
+        "coordinates": [
+          619704.1137083375,
+          5645202.378259274
+        ]
+      },
+      "distance_to_a4_m": 4963.846586260338,
+      "corridor_status": "inside",
+      "state_status": "inside",
+      "screening_status": "accepted",
+      "quality_flags": [
+        "duplicate_in_batch",
+        "synthetic_fixture"
+      ],
+      "raw_record": {
+        "source_id": "SYN-Q001",
+        "title": "TESTFALL: Genehmigung für fiktives Industriegebiet an der Südachse",
+        "description": "Vollständig synthetischer Testeintrag ohne Realweltbezug.",
+        "source_url": "https://example.invalid/record/SYN-Q001",
+        "publication_date_raw": "03.10.2026",
+        "publication_date_machine": "2026-10-03",
+        "procedure_status": "Genehmigung erteilt",
+        "land_use": "Industriegebiet",
+        "municipality": "Gotha",
+        "location_text": "Fiktive Musterstraße 1, Gotha",
+        "planning_type": "Gewerbliche Bauflächen",
+        "coordinates": {
+          "crs": "EPSG:4326",
+          "lat": "50.946",
+          "lon": "10.704"
+        }
+      },
+      "ingest_metadata": {
+        "observation_flags": [
+          "duplicate_in_batch"
+        ],
+        "a4_reference": {
+          "file": "a4_thueringen.geojson",
+          "sha256": "9292b79391a03866d882d063a9c2144b946242c45a91bd4cd06bf5ab66366936",
+          "generator": "overpass-turbo",
+          "snapshot_timestamp": "2026-10-27T18:00:36Z",
+          "license": "OpenStreetMap contributors, ODbL",
+          "line_features": 1245,
+          "skipped_features": 0,
+          "bounds_4326": [
+            9.9345144,
+            50.8405463,
+            12.3562277,
+            51.0173454
+          ],
+          "bounds_25832": [
+            565655.4533258334,
+            5637461.746458875,
+            736283.5680584259,
+            5652633.616437347
+          ],
+          "line_length_m": 382871.69610153686,
+          "buffer_meters": 10000.0,
+          "continuous_chains": 2,
+          "max_longitude_gap_m": 0.0,
+          "connectivity_tolerance_m": 1000
+        },
+        "state_reference": {
+          "file": "thueringen_boundary.geojson",
+          "sha256": "406a9049b6ce9ab439b83d46e076b46bf4ff4442c733f0fb664ddb5ead538904",
+          "generator": "overpass-turbo",
+          "snapshot_timestamp": "2026-10-27T18:09:51Z",
+          "license": "OpenStreetMap contributors, ODbL",
+          "polygon_features": 1,
+          "skipped_features": 2,
+          "bounds_4326": [
+            9.8769608,
+            50.2043467,
+            12.6539368,
+            51.6492842
+          ],
+          "bounds_25832": [
+            562009.0429371081,
+            5562762.865367232,
+            756805.838107083,
+            5723503.533744069
+          ],
+          "area_km2": 16198.1127973051
+        }
+      },
+      "exclusion_reasons": []
+    },
+    {
+      "source_id": "SYN-Q002",
+      "source_url": "https://example.invalid/record/SYN-Q002",
+      "title": "TESTFALL: Zulassung eines fiktiven Gewerbestandortes",
+      "description": "Vollständig synthetischer Testeintrag ohne Realweltbezug.",
+      "municipality": "Erfurt",
+      "location_text": "Fiktives Grundstück in Erfurt (Testszenario)",
+      "procedure_status": "Genehmigung erteilt",
+      "source_system": "thueringen_planning_fixture",
+      "source_key": "id:SYN-Q002",
+      "publication_date": "2026-10-04",
+      "publication_date_raw": "2026-10-04",
+      "approval_status": "approved",
+      "industrial_status": "industrial",
+      "signal_type": "approval_notice",
+      "geom": {
+        "srid": 25832,
+        "type": "Point",
+        "coordinates": [
+          643067.4956361981,
+          5646796.287091407
+        ]
+      },
+      "distance_to_a4_m": 5122.335974539354,
+      "corridor_status": "inside",
+      "state_status": "inside",
+      "screening_status": "accepted",
+      "quality_flags": [
+        "synthetic_fixture"
+      ],
+      "raw_record": {
+        "source_id": "SYN-Q002",
+        "title": "TESTFALL: Zulassung eines fiktiven Gewerbestandortes",
+        "description": "Vollständig synthetischer Testeintrag ohne Realweltbezug.",
+        "source_url": "https://example.invalid/record/SYN-Q002",
+        "publication_date_raw": "2026-10-04",
+        "publication_date_machine": "2026-10-04",
+        "procedure_status": "Genehmigung erteilt",
+        "land_use": "Gewerbegebiet",
+        "municipality": "Erfurt",
+        "location_text": "Fiktives Grundstück in Erfurt (Testszenario)",
+        "planning_type": "Vorhabenbezogener Bebauungsplan",
+        "coordinates": {
+          "crs": "EPSG:4326",
+          "lat": "50.955",
+          "lon": "11.037"
+        }
+      },
+      "ingest_metadata": {
+        "observation_flags": [],
+        "a4_reference": {
+          "file": "a4_thueringen.geojson",
+          "sha256": "9292b79391a03866d882d063a9c2144b946242c45a91bd4cd06bf5ab66366936",
+          "generator": "overpass-turbo",
+          "snapshot_timestamp": "2026-10-27T18:00:36Z",
+          "license": "OpenStreetMap contributors, ODbL",
+          "line_features": 1245,
+          "skipped_features": 0,
+          "bounds_4326": [
+            9.9345144,
+            50.8405463,
+            12.3562277,
+            51.0173454
+          ],
+          "bounds_25832": [
+            565655.4533258334,
+            5637461.746458875,
+            736283.5680584259,
+            5652633.616437347
+          ],
+          "line_length_m": 382871.69610153686,
+          "buffer_meters": 10000.0,
+          "continuous_chains": 2,
+          "max_longitude_gap_m": 0.0,
+          "connectivity_tolerance_m": 1000
+        },
+        "state_reference": {
+          "file": "thueringen_boundary.geojson",
+          "sha256": "406a9049b6ce9ab439b83d46e076b46bf4ff4442c733f0fb664ddb5ead538904",
+          "generator": "overpass-turbo",
+          "snapshot_timestamp": "2026-10-27T18:09:51Z",
+          "license": "OpenStreetMap contributors, ODbL",
+          "polygon_features": 1,
+          "skipped_features": 2,
+          "bounds_4326": [
+            9.8769608,
+            50.2043467,
+            12.6539368,
+            51.6492842
+          ],
+          "bounds_25832": [
+            562009.0429371081,
+            5562762.865367232,
+            756805.838107083,
+            5723503.533744069
+          ],
+          "area_km2": 16198.1127973051
+        }
+      },
+      "exclusion_reasons": []
+    },
+    {
+      "source_id": "SYN-Q005",
+      "source_url": "https://example.invalid/record/SYN-Q005",
+      "title": "TESTFALL: Fiktive Industrieflächengenehmigung mit ungenauem Standort",
+      "description": "Vollständig synthetischer Testeintrag ohne Realweltbezug.",
+      "municipality": "Eisenach",
+      "location_text": "Nur Gemeinde Eisenach bekannt",
+      "procedure_status": "Genehmigung erteilt",
+      "source_system": "thueringen_planning_fixture",
+      "source_key": "id:SYN-Q005",
+      "publication_date": "2026-10-07",
+      "publication_date_raw": "07.10.2026",
+      "approval_status": "approved",
+      "industrial_status": "industrial",
+      "signal_type": "approval_notice",
+      "geom": null,
+      "distance_to_a4_m": null,
+      "corridor_status": "unknown",
+      "state_status": "unknown",
+      "screening_status": "needs_review",
+      "quality_flags": [
+        "missing_coordinates",
+        "synthetic_fixture"
+      ],
+      "raw_record": {
+        "source_id": "SYN-Q005",
+        "title": "TESTFALL: Fiktive Industrieflächengenehmigung mit ungenauem Standort",
+        "description": "Vollständig synthetischer Testeintrag ohne Realweltbezug.",
+        "source_url": "https://example.invalid/record/SYN-Q005",
+        "publication_date_raw": "07.10.2026",
+        "publication_date_machine": null,
+        "procedure_status": "Genehmigung erteilt",
+        "land_use": "Industriegebiet",
+        "municipality": "Eisenach",
+        "location_text": "Nur Gemeinde Eisenach bekannt"
+      },
+      "ingest_metadata": {
+        "observation_flags": [],
+        "a4_reference": {
+          "file": "a4_thueringen.geojson",
+          "sha256": "9292b79391a03866d882d063a9c2144b946242c45a91bd4cd06bf5ab66366936",
+          "generator": "overpass-turbo",
+          "snapshot_timestamp": "2026-10-27T18:00:36Z",
+          "license": "OpenStreetMap contributors, ODbL",
+          "line_features": 1245,
+          "skipped_features": 0,
+          "bounds_4326": [
+            9.9345144,
+            50.8405463,
+            12.3562277,
+            51.0173454
+          ],
+          "bounds_25832": [
+            565655.4533258334,
+            5637461.746458875,
+            736283.5680584259,
+            5652633.616437347
+          ],
+          "line_length_m": 382871.69610153686,
+          "buffer_meters": 10000.0,
+          "continuous_chains": 2,
+          "max_longitude_gap_m": 0.0,
+          "connectivity_tolerance_m": 1000
+        },
+        "state_reference": {
+          "file": "thueringen_boundary.geojson",
+          "sha256": "406a9049b6ce9ab439b83d46e076b46bf4ff4442c733f0fb664ddb5ead538904",
+          "generator": "overpass-turbo",
+          "snapshot_timestamp": "2026-10-27T18:09:51Z",
+          "license": "OpenStreetMap contributors, ODbL",
+          "polygon_features": 1,
+          "skipped_features": 2,
+          "bounds_4326": [
+            9.8769608,
+            50.2043467,
+            12.6539368,
+            51.6492842
+          ],
+          "bounds_25832": [
+            562009.0429371081,
+            5562762.865367232,
+            756805.838107083,
+            5723503.533744069
+          ],
+          "area_km2": 16198.1127973051
+        }
+      },
+      "exclusion_reasons": []
+    },
+    {
+      "source_id": "SYN-Q008",
+      "source_url": "https://example.invalid/record/SYN-Q008",
+      "title": "TESTFALL: Fiktive bestätigte Gewerbeansiedlung ohne Datum",
+      "description": "Vollständig synthetischer Testeintrag ohne Realweltbezug.",
+      "municipality": "Jena",
+      "location_text": "Fiktives Gewerbegrundstück",
+      "procedure_status": "Genehmigung erteilt",
+      "source_system": "thueringen_planning_fixture",
+      "source_key": "id:SYN-Q008",
+      "publication_date": null,
+      "publication_date_raw": null,
+      "approval_status": "approved",
+      "industrial_status": "industrial",
+      "signal_type": "approval_notice",
+      "geom": {
+        "srid": 25832,
+        "type": "Point",
+        "coordinates": [
+          682027.2219695287,
+          5644457.071733918
+        ]
+      },
+      "distance_to_a4_m": 4969.405964272432,
+      "corridor_status": "inside",
+      "state_status": "inside",
+      "screening_status": "needs_review",
+      "quality_flags": [
+        "missing_publication_date",
+        "synthetic_fixture"
+      ],
+      "raw_record": {
+        "source_id": "SYN-Q008",
+        "title": "TESTFALL: Fiktive bestätigte Gewerbeansiedlung ohne Datum",
+        "description": "Vollständig synthetischer Testeintrag ohne Realweltbezug.",
+        "source_url": "https://example.invalid/record/SYN-Q008",
+        "procedure_status": "Genehmigung erteilt",
+        "land_use": "Gewerbegebiet",
+        "municipality": "Jena",
+        "location_text": "Fiktives Gewerbegrundstück",
+        "coordinates": {
+          "crs": "EPSG:4326",
+          "lat": "50.923",
+          "lon": "11.59"
+        }
+      },
+      "ingest_metadata": {
+        "observation_flags": [],
+        "a4_reference": {
+          "file": "a4_thueringen.geojson",
+          "sha256": "9292b79391a03866d882d063a9c2144b946242c45a91bd4cd06bf5ab66366936",
+          "generator": "overpass-turbo",
+          "snapshot_timestamp": "2026-10-27T18:00:36Z",
+          "license": "OpenStreetMap contributors, ODbL",
+          "line_features": 1245,
+          "skipped_features": 0,
+          "bounds_4326": [
+            9.9345144,
+            50.8405463,
+            12.3562277,
+            51.0173454
+          ],
+          "bounds_25832": [
+            565655.4533258334,
+            5637461.746458875,
+            736283.5680584259,
+            5652633.616437347
+          ],
+          "line_length_m": 382871.69610153686,
+          "buffer_meters": 10000.0,
+          "continuous_chains": 2,
+          "max_longitude_gap_m": 0.0,
+          "connectivity_tolerance_m": 1000
+        },
+        "state_reference": {
+          "file": "thueringen_boundary.geojson",
+          "sha256": "406a9049b6ce9ab439b83d46e076b46bf4ff4442c733f0fb664ddb5ead538904",
+          "generator": "overpass-turbo",
+          "snapshot_timestamp": "2026-10-27T18:09:51Z",
+          "license": "OpenStreetMap contributors, ODbL",
+          "polygon_features": 1,
+          "skipped_features": 2,
+          "bounds_4326": [
+            9.8769608,
+            50.2043467,
+            12.6539368,
+            51.6492842
+          ],
+          "bounds_25832": [
+            562009.0429371081,
+            5562762.865367232,
+            756805.838107083,
+            5723503.533744069
+          ],
+          "area_km2": 16198.1127973051
+        }
+      },
+      "exclusion_reasons": []
+    }
+  ]
+}

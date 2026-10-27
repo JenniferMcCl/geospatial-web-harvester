@@ -1,0 +1,127 @@
+{
+  "success": true,
+  "synthetic": true,
+  "source_mode": "fixture",
+  "mode": "dry_run",
+  "scan_time": "2026-10-27T12:00:00+00:00",
+  "fetched_cards": 8,
+  "parsed_observations": 8,
+  "unique_keys": 7,
+  "duplicates": 1,
+  "quarantined": 0,
+  "quarantine_details": [],
+  "parse_failures": 0,
+  "network_failures": 0,
+  "database_failures": 0,
+  "database": {
+    "inserted": 0,
+    "updated": 0,
+    "unchanged": 0,
+    "source_updated": 0,
+    "reference_updated": 0
+  },
+  "a4_reference": {
+    "file": "a4_thueringen.geojson",
+    "sha256": "9292b79391a03866d882d063a9c2144b946242c45a91bd4cd06bf5ab66366936",
+    "generator": "overpass-turbo",
+    "snapshot_timestamp": "2026-10-27T18:00:36Z",
+    "license": "OpenStreetMap contributors, ODbL",
+    "line_features": 1245,
+    "skipped_features": 0,
+    "bounds_4326": [
+      9.9345144,
+      50.8405463,
+      12.3562277,
+      51.0173454
+    ],
+    "bounds_25832": [
+      565655.4533258334,
+      5637461.746458875,
+      736283.5680584259,
+      5652633.616437347
+    ],
+    "line_length_m": 382871.69610153686,
+    "buffer_meters": 10000.0,
+    "continuous_chains": 2,
+    "max_longitude_gap_m": 0.0,
+    "connectivity_tolerance_m": 1000
+  },
+  "state_reference": {
+    "file": "thueringen_boundary.geojson",
+    "sha256": "406a9049b6ce9ab439b83d46e076b46bf4ff4442c733f0fb664ddb5ead538904",
+    "generator": "overpass-turbo",
+    "snapshot_timestamp": "2026-10-27T18:09:51Z",
+    "license": "OpenStreetMap contributors, ODbL",
+    "polygon_features": 1,
+    "skipped_features": 2,
+    "bounds_4326": [
+      9.8769608,
+      50.2043467,
+      12.6539368,
+      51.6492842
+    ],
+    "bounds_25832": [
+      562009.0429371081,
+      5562762.865367232,
+      756805.838107083,
+      5723503.533744069
+    ],
+    "area_km2": 16198.1127973051
+  },
+  "warnings": [
+    "synthetic_planning_notices"
+  ],
+  "accepted": 2,
+  "needs_review": 2,
+  "excluded": 3,
+  "no_geometry": 1,
+  "classified_records": 7,
+  "domain": {
+    "approval_status": {
+      "approved": 6,
+      "not_approved": 1
+    },
+    "industrial_status": {
+      "industrial": 6,
+      "non_industrial": 1
+    }
+  },
+  "spatial": {
+    "inside": 5,
+    "outside": 1,
+    "unknown": 1
+  },
+  "state": {
+    "inside": 6,
+    "unknown": 1
+  },
+  "quality_flags": {
+    "duplicate_in_batch": 1,
+    "excluded_non_industrial": 1,
+    "excluded_not_approved": 1,
+    "excluded_outside_a4": 1,
+    "missing_coordinates": 1,
+    "missing_publication_date": 1,
+    "synthetic_fixture": 7
+  },
+  "excluded_records": [
+    {
+      "source_key": "id:SYN-Q003",
+      "reasons": [
+        "not_approved"
+      ]
+    },
+    {
+      "source_key": "id:SYN-Q004",
+      "reasons": [
+        "non_industrial"
+      ]
+    },
+    {
+      "source_key": "id:SYN-Q007",
+      "reasons": [
+        "outside_a4"
+      ]
+    }
+  ]
+}

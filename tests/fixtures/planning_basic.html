@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>IRIS Synthetic Planning Notices — BASIC</title>
+<style>body{max-width:960px;margin:2rem auto;font-family:system-ui,Arial,sans-serif;line-height:1.5;padding:0 1rem} .notice-list>*{border:1px solid #ccd5df;border-radius:8px;padding:1rem;margin:1rem 0}.warning{background:#fff4d7;padding:1rem;border-left:5px solid #bb7100}dt{font-weight:bold;display:inline}dd{display:inline;margin-left:.3rem;margin-right:1rem}dd:after{content:"";display:block}.coordinates{display:none}</style>
+</head>
+<body>
+<header>
+<h1>IRIS Synthetic Planning Notices — BASIC</h1>
+<p class="warning"><strong>TEST FIXTURE — COMPLETELY SYNTHETIC DATA.</strong> Small human-readable baseline dataset: 8 cards, including one intentional duplicate. The next-page link is for mocked pagination only. The records, titles, dates, coordinates, identifiers and URLs below are invented; they are NOT from thueringen.de and must never be presented as verified public planning announcements. Expectation attributes are for tests only and MUST NOT be used as input to the parser.</p>
+<p>Fictitious fixture URL: <code>https://example.invalid/thueringen/bauleitplanung</code>. This page is provided for local parsing only. Do not make live network requests to these links.</p>
+</header>
+<main class="notice-list">
+<article class="planning-notice" data-record-id="SYN-Q001" data-test-expected-signal="candidate" data-test-expected-geometry="point" data-test-case="confirmed-industry">
+<h2 class="notice-title"><a class="notice-link" href="/record/SYN-Q001">TESTFALL: Genehmigung für fiktives Industriegebiet an der Südachse</a></h2>
+<p class="summary">Vollständig synthetischer Testeintrag ohne Realweltbezug.</p>
+<dl class="notice-metadata"><dt>Veröffentlicht</dt><dd data-field="published"><time datetime="2026-10-03">03.10.2026</time></dd>
+<dt>Verfahrensstand</dt><dd data-field="procedure-status">Genehmigung erteilt</dd>
+<dt>Nutzungsart</dt><dd data-field="land-use">Industriegebiet</dd>
+<dt>Gemeinde</dt><dd data-field="municipality">Gotha</dd>
+<dt>Standort</dt><dd data-field="location-text">Fiktive Musterstraße 1, Gotha</dd>
+<dt>Planart</dt><dd data-field="planning-type">Gewerbliche Bauflächen</dd></dl>
+<span class="coordinates" data-crs="EPSG:4326" data-lat="50.946" data-lon="10.704"></span>
+
+</article>
+<article class="planning-notice" data-record-id="SYN-Q002" data-test-expected-signal="candidate" data-test-expected-geometry="point" data-test-case="confirmed-business">
+<h2 class="notice-title"><a class="notice-link" href="/record/SYN-Q002">TESTFALL: Zulassung eines fiktiven Gewerbestandortes</a></h2>
+<p class="summary">Vollständig synthetischer Testeintrag ohne Realweltbezug.</p>
+<dl class="notice-metadata"><dt>Veröffentlicht</dt><dd data-field="published"><time datetime="2026-10-04">2026-10-04</time></dd>
+<dt>Verfahrensstand</dt><dd data-field="procedure-status">Genehmigung erteilt</dd>
+<dt>Nutzungsart</dt><dd data-field="land-use">Gewerbegebiet</dd>
+<dt>Gemeinde</dt><dd data-field="municipality">Erfurt</dd>
+<dt>Standort</dt><dd data-field="location-text">Fiktives Grundstück in Erfurt (Testszenario)</dd>
+<dt>Planart</dt><dd data-field="planning-type">Vorhabenbezogener Bebauungsplan</dd></dl>
+<span class="coordinates" data-crs="EPSG:4326" data-lat="50.955" data-lon="11.037"></span>
+
+</article>
+<article class="planning-notice" data-record-id="SYN-Q003" data-test-expected-signal="exclude" data-test-expected-geometry="point" data-test-case="draft-industrial">
+<h2 class="notice-title"><a class="notice-link" href="/record/SYN-Q003">TESTFALL: Entwurf Erweiterung Industriepark</a></h2>
+<p class="summary">Vollständig synthetischer Testeintrag ohne Realweltbezug.</p>
+<dl class="notice-metadata"><dt>Veröffentlicht</dt><dd data-field="published">05.10.2026</dd>
+<dt>Verfahrensstand</dt><dd data-field="procedure-status">Öffentliche Auslegung eines Entwurfs</dd>
+<dt>Nutzungsart</dt><dd data-field="land-use">Industriegebiet</dd>
+<dt>Gemeinde</dt><dd data-field="municipality">Jena</dd>
+<dt>Standort</dt><dd data-field="location-text">Fiktiver Entwicklungsbereich</dd>
+</dl>
+<span class="coordinates" data-crs="EPSG:4326" data-lat="50.934" data-lon="11.587"></span>
+
+</article>
+<article class="planning-notice" data-record-id="SYN-Q004" data-test-expected-signal="exclude" data-test-expected-geometry="point" data-test-case="approved-nonindustrial">
+<h2 class="notice-title"><a class="notice-link" href="/record/SYN-Q004">TESTFALL: Genehmigter Wohnbebauungsplan</a></h2>
+<p class="summary">Vollständig synthetischer Testeintrag ohne Realweltbezug.</p>
+<dl class="notice-metadata"><dt>Veröffentlicht</dt><dd data-field="published">06.10.2026</dd>
+<dt>Verfahrensstand</dt><dd data-field="procedure-status">Genehmigung erteilt</dd>
+<dt>Nutzungsart</dt><dd data-field="land-use">Wohngebiet</dd>
+<dt>Gemeinde</dt><dd data-field="municipality">Gotha</dd>
+<dt>Standort</dt><dd data-field="location-text">Fiktives Wohnviertel</dd>
+</dl>
+<span class="coordinates" data-crs="EPSG:4326" data-lat="50.949" data-lon="10.703"></span>
+
+</article>
+<article class="planning-notice" data-record-id="SYN-Q005" data-test-expected-signal="candidate" data-test-expected-geometry="missing" data-test-case="industrial-municipality-only">
+<h2 class="notice-title"><a class="notice-link" href="/record/SYN-Q005">TESTFALL: Fiktive Industrieflächengenehmigung mit ungenauem Standort</a></h2>
+<p class="summary">Vollständig synthetischer Testeintrag ohne Realweltbezug.</p>
+<dl class="notice-metadata"><dt>Veröffentlicht</dt><dd data-field="published">07.10.2026</dd>
+<dt>Verfahrensstand</dt><dd data-field="procedure-status">Genehmigung erteilt</dd>
+<dt>Nutzungsart</dt><dd data-field="land-use">Industriegebiet</dd>
+<dt>Gemeinde</dt><dd data-field="municipality">Eisenach</dd>
+<dt>Standort</dt><dd data-field="location-text">Nur Gemeinde Eisenach bekannt</dd>
+</dl>
+
+
+</article>
+<article class="planning-notice" data-record-id="SYN-Q001" data-test-expected-signal="duplicate" data-test-expected-geometry="point" data-test-case="duplicate-same-id">
+<h2 class="notice-title"><a class="notice-link" href="/record/SYN-Q001">TESTFALL: Genehmigung für fiktives Industriegebiet an der Südachse</a></h2>
+<p class="summary">Vollständig synthetischer Testeintrag ohne Realweltbezug.</p>
+<dl class="notice-metadata"><dt>Veröffentlicht</dt><dd data-field="published"><time datetime="2026-10-03">03.10.2026</time></dd>
+<dt>Verfahrensstand</dt><dd data-field="procedure-status">Genehmigung erteilt</dd>
+<dt>Nutzungsart</dt><dd data-field="land-use">Industriegebiet</dd>
+<dt>Gemeinde</dt><dd data-field="municipality">Gotha</dd>
+<dt>Standort</dt><dd data-field="location-text">Fiktive Musterstraße 1, Gotha</dd>
+</dl>
+<span class="coordinates" data-crs="EPSG:4326" data-lat="50.946" data-lon="10.704"></span>
+
+</article>
+<article class="planning-notice" data-record-id="SYN-Q007" data-test-expected-signal="candidate" data-test-expected-geometry="point" data-test-case="far-from-corridor">
+<h2 class="notice-title"><a class="notice-link" href="/record/SYN-Q007">TESTFALL: Genehmigung eines fiktiven Industrieareals im Norden</a></h2>
+<p class="summary">Vollständig synthetischer Testeintrag ohne Realweltbezug.</p>
+<dl class="notice-metadata"><dt>Veröffentlicht</dt><dd data-field="published">08.10.2026</dd>
+<dt>Verfahrensstand</dt><dd data-field="procedure-status">Genehmigung erteilt</dd>
+<dt>Nutzungsart</dt><dd data-field="land-use">Industriegebiet</dd>
+<dt>Gemeinde</dt><dd data-field="municipality">Nordhausen</dd>
+<dt>Standort</dt><dd data-field="location-text">Fiktiver Standort Nordhausen</dd>
+</dl>
+<span class="coordinates" data-crs="EPSG:4326" data-lat="51.503" data-lon="10.791"></span>
+
+</article>
+<article class="planning-notice" data-record-id="SYN-Q008" data-test-expected-signal="candidate" data-test-expected-geometry="point" data-test-case="missing-publication-date">
+<h2 class="notice-title"><a class="notice-link" href="/record/SYN-Q008">TESTFALL: Fiktive bestätigte Gewerbeansiedlung ohne Datum</a></h2>
+<p class="summary">Vollständig synthetischer Testeintrag ohne Realweltbezug.</p>
+<dl class="notice-metadata">
+<dt>Verfahrensstand</dt><dd data-field="procedure-status">Genehmigung erteilt</dd>
+<dt>Nutzungsart</dt><dd data-field="land-use">Gewerbegebiet</dd>
+<dt>Gemeinde</dt><dd data-field="municipality">Jena</dd>
+<dt>Standort</dt><dd data-field="location-text">Fiktives Gewerbegrundstück</dd>
+</dl>
+<span class="coordinates" data-crs="EPSG:4326" data-lat="50.923" data-lon="11.59"></span>
+
+</article>
+</main>
+<nav class="pagination"><a rel="next" href="https://example.invalid/thueringen/bauleitplanung?page=2">Nächste Seite</a></nav>
+</body></html>
